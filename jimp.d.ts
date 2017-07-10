@@ -60,6 +60,7 @@ declare namespace Jimp {
         scaleToFit(w: number, h: number, mode?: any, cb?: Jimp.ImageCallback): this;
         rotate(deg: number, mode?: number|boolean, cb?: Jimp.ImageCallback): this;
         getBuffer(mime: string, cb:(err:Error, buffer:Buffer)=>any): this;
+        getBase64(mine: string, cb:(err:Error, buffer:Buffer)=>any): this;
 
         write(path: string, cb?: Jimp.ImageCallback): this;
     }
